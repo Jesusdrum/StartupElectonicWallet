@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>StartupElectonicWallet</name>
+    </assembly>
+    <members>
+        <member name="M:StartupElectonicWallet.Controllers.LoginController.Get">
+             GET: api/
+            <summary>
+             Status
+            </summary>
+            <Return>Estatus</Return>
+        </member>
+        <member name="M:StartupElectonicWallet.Controllers.LoginController.Authenticate(StartupElectonicWallet.Models.AuthInfo)">
+             POST: api/Authenticate
+            <summary>
+             Login de API
+            </summary>
+             <remarks>
+             Sample request:
+             
+                 POST api/Authenticate
+                 {        
+                   "Username": "wsUser",
+                   "Password": "123456"    
+                 }
+             </remarks>
+            <param name="user">Json: Username, Password</param>
+            <Return name="Token">Bearer: Token</Return>
+        </member>
+    </members>
+</doc>
