@@ -11,6 +11,7 @@ Pasos:
     Este servicio devuelve un token para ser usado en el resto de los servicios mediante autenticación Bearer
 5. Se deben agregar los cliente a través del servicio 
     POST: api/v1/Customer/
+    
     Datos de prueba: {
     "CustomerIdentifier": "1234",
     "Name": "Jose",
@@ -18,6 +19,7 @@ Pasos:
     "Addreess": "Casa",
     "Birthdate": "2000-10-18"
 }
+
 6. Se consulta a los clientes a través del servicio
     GET: api/v1/Customer/
          api/v1/Customer/{id}
@@ -35,14 +37,17 @@ Pasos:
 7. Luego se pueden crear cuentas a los clientes por medio del servicio
       POST:api/v1/CustomerAccount/
       Datos de prueba: {"CustomerId":2,"StatusId":1,"AvailableAmount":200}
+      
              Response: {
                 "isSuccess": true,
                 "message": "Registro guardado.",
                 "dateTimeResponse": "2021-10-22T14:12:09.8830936-05:00"
                  }
+                 
 8. Se pueden consultar las cuentas creadas por medio del servicio
       GET: api/v1/CustomerAccount/{1} 
            api/v1/CustomerAccount/
+           
            Response: {
                       "accountId": 2,
                       "customerId": 2,
